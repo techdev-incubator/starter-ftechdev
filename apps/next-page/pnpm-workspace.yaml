@@ -1,0 +1,4 @@
+packages:
+  - 'pages/*'
+  - 'public/*'
+  - 'styles/*'

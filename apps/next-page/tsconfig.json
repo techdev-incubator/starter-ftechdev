@@ -1,0 +1,14 @@
+{
+  "extends": "@packages/ts/next.json",
+  "compilerOptions": {
+    "plugins": [{
+      "name": "next"
+    }],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.mjs"],
+  "exclude": ["node_modules"]
+}

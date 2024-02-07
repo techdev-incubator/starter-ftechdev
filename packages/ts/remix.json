@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "RemixRun",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "ES2019"],
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "target": "ES2019",
+    "strict": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "noEmit": true,    
+    "rootDir": ".",
+    "paths": {
+      "~/*": ["app/*"],
+      "components/*": ["app/components/*"],
+      "assets/*": ["public/assets/*"]
+    },
+  },
+  "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
