@@ -1,8 +1,8 @@
 {
-    "name": "turbo-ftech",
+    "name": "starter-ftechdev",
     "license": "MIT",
     "version": "0.0.0",
-    "description": "Bootstrapping turbo repo with Remix Run and Nexjs",
+    "description": "Bootstrapping remix-app and next-app projects using Turbo",
     "private": true,
     "scripts": {
         "build": "turbo run build",

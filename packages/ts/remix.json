@@ -14,13 +14,7 @@
     "allowJs": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
-    "noEmit": true,    
-    "rootDir": ".",
-    "paths": {
-      "~/*": ["app/*"],
-      "components/*": ["app/components/*"],
-      "assets/*": ["public/assets/*"]
-    },
+    "noEmit": true,
   },
   "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
