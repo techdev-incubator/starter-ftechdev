@@ -26,7 +26,7 @@ export function Card({ children, filepath }: Props): JSX.Element {
                     border: "1.5px solid #bbb",
                     position: "absolute",
                     left: 8,
-                    top: -13,
+                    top: -14,
                     height: 20,
                     paddingInline: 8,
                     paddingBlock: 4,
