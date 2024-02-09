@@ -1,6 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Card } from '@packages/ui';
-import { Outlet } from "@remix-run/react";
+import { Link, Outlet } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -12,8 +12,13 @@ export const meta: MetaFunction = () => {
 const FILEPATH = '_index.tsx'
 
 export default function Index() {
-  return ( 
+  return (
     <Card filepath={FILEPATH}>
+      Routes
+      <ul>
+        <li><Link to='teams'>Teams</Link></li>
+        <li><Link to='users'>Users</Link></li>
+      </ul>
       <Outlet />
     </Card>
   );

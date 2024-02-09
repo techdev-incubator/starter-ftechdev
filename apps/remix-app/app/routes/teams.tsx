@@ -1,11 +1,11 @@
 import { Card } from "@packages/ui";
-import { Outlet } from "@remix-run/react";
+import { Link, Outlet } from "@remix-run/react";
 
 const FILEPATH = 'routes/teams.tsx'
 
 function Teams() {
     return (
-        <Card filepath={FILEPATH}>
+        <Card filepath={<Link to='/teams'>{FILEPATH}</Link>}>
             <Outlet />
         </Card>
     );

@@ -2,6 +2,7 @@ import { Card } from "@packages/ui";
 import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction } from "@remix-run/node";
 import {
+  Link,
   Links,
   LiveReload,
   Meta,
@@ -24,9 +25,9 @@ export default function App() {
         <Links />
       </head>
       <body
-        style={{ paddingBlock: 24 }}
+        style={{ padding: 24 }}
       >
-        <Card filepath="root.tsx">
+        <Card filepath={<Link to="/" >root.tsx</Link>}>
           <Outlet />
         </Card>
         <ScrollRestoration />

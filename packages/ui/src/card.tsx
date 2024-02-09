@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 type Props = React.PropsWithChildren<{
-    filepath: string
+    filepath: string | React.ReactNode
 }>
 
 export function Card({ children, filepath }: Props): JSX.Element {
