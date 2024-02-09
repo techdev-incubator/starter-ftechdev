@@ -1,13 +1,12 @@
 import { Card } from "@packages/ui";
 import { LoaderFunction } from "@remix-run/node";
-import { Await, Link, useLoaderData } from "@remix-run/react";
+import { Await, useLoaderData } from "@remix-run/react";
 import { Suspense } from "react";
 import { supabase } from "~/libs/supabase-client";
 import type { HttpResponseSupabase } from "~/models/http";
 import type { User } from "~/models/users";
 
 const FILEPATH = 'routes/users.$id.tsx'
-
 
 export const loader: LoaderFunction = async ({ params }) => {
     const idUser = params?.id as string

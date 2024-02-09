@@ -15,9 +15,9 @@ export async function action({ request }: ActionFunctionArgs) {
     }
 
     const { data, status, ...response } = await supabase.from('users').insert([forms]).single()
-    console.log({data, status, response})
+    
     if (response.error) {
-        console.log('error')
+        console.error('error')
     }
     return redirect('/users')
 }

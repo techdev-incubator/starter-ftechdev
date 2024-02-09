@@ -1,5 +1,5 @@
 import { Card } from "@packages/ui";
-import { Outlet, useLoaderData } from "@remix-run/react";
+import { Outlet } from "@remix-run/react";
 
 const FILEPATH = 'routes/users.tsx'
 
