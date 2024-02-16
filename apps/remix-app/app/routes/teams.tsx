@@ -1,4 +1,4 @@
-import { Card } from "@packages/ui";
+import { Card } from "@package/ui";
 import { Link, Outlet } from "@remix-run/react";
 
 const FILEPATH = 'routes/teams.tsx'

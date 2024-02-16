@@ -1,4 +1,4 @@
-import { Card } from "@packages/ui";
+import { Card } from "@package/ui";
 import { LoaderFunction } from "@remix-run/node";
 import { Await, useLoaderData } from "@remix-run/react";
 import { Suspense } from "react";

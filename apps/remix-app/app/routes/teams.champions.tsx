@@ -1,4 +1,4 @@
-import { Card } from "@packages/ui";
+import { Card } from "@package/ui";
 
 const FILEPATH = 'routes/teams.champions.tsx'
 

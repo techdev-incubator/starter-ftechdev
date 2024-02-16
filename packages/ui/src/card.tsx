@@ -2,6 +2,7 @@ import * as React from 'react';
 
 type Props = React.PropsWithChildren<{
     filepath: string | React.ReactNode
+
 }>
 
 export function Card({ children, filepath }: Props): JSX.Element {
@@ -9,13 +10,14 @@ export function Card({ children, filepath }: Props): JSX.Element {
         <div
             style={{
                 borderRadius: 8,
-                background: "#eee",
+                background: "#f7f7f7",
                 border: "1.5px solid #ccc",
                 position: "relative",
-                minHeight: 80,
+                minHeight: 60,
                 paddingInline: 8,
                 paddingTop: 40,
                 paddingBottom: 8,
+                minWidth: 200
 
             }}
         >

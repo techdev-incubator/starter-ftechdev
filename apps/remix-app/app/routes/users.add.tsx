@@ -1,4 +1,4 @@
-import { Card } from "@packages/ui";
+import { Card } from "@package/ui";
 import { ActionFunctionArgs, redirect } from "@remix-run/node";
 import { Form } from "@remix-run/react";
 import { supabase } from "~/libs/supabase-client";
@@ -15,7 +15,7 @@ export async function action({ request }: ActionFunctionArgs) {
     }
 
     const { data, status, ...response } = await supabase.from('users').insert([forms]).single()
-    
+
     if (response.error) {
         console.error('error')
     }

@@ -1,4 +1,4 @@
-import { Card } from "@packages/ui";
+import { Card } from "@package/ui";
 import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction } from "@remix-run/node";
 import {

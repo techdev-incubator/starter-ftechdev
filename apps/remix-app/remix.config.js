@@ -5,12 +5,12 @@ export default {
   // assetsBuildDirectory: "public/build",
   // publicPath: "/build/",
   // serverBuildPath: "build/index.js"
-  serverDependenciesToBundle: [
-    "@packages/ui",
-    "@packages/ts",
-    "@packages/eslint",
-  ],
+  serverDependenciesToBundle: ["@package/ui", "@package/ts", "@package/eslint"],
   watchPaths: async () => {
-    return ["./../../packages/ui/src", "./../../packages/ts", "./../../packages/eslint"];
+    return [
+      "./../../packages/ui/src",
+      "./../../packages/ts",
+      "./../../packages/eslint",
+    ];
   },
 };
