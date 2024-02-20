@@ -2,5 +2,5 @@
   "compilerOptions": {
       "jsx": "react"
   },
-  "extends": "@packages/ts/base.json"
+  "extends": "@package/ts/base.json"
 }

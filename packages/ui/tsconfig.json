@@ -1,5 +1,5 @@
 {
-    "extends": "@packages/ts/react-library.json",
+    "extends": "@package/ts/react-library.json",
     "compilerOptions": {
         "outDir": "dist"
     },

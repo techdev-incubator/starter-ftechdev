@@ -11,7 +11,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@packages/ui": "workspace:*",
+    "@package/ui": "workspace:*",
     "@remix-run/css-bundle": "^2.6.0",
     "@remix-run/node": "^2.6.0",
     "@remix-run/react": "^2.6.0",
@@ -22,8 +22,8 @@
     "@supabase/supabase-js": "2.39.3"
   },
   "devDependencies": {
-    "@packages/eslint": "workspace:*",
-    "@packages/ts": "workspace:*",
+    "@package/eslint": "workspace:*",
+    "@package/ts": "workspace:*",
     "@remix-run/dev": "^2.6.0",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",

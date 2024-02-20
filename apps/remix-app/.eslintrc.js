@@ -1,4 +1,4 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: ["@packages/eslint", "@packages/ts", "@packages/ui"],
+  extends: ["@package/eslint", "@package/ts", "@package/ui"],
 };

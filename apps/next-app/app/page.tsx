@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Card } from "@package/ui";
 
 export default function Home() {
   return (
@@ -90,6 +91,9 @@ export default function Home() {
           </p>
         </a>
       </div>
+      <Card filepath='next-app/app/page.tsx'>
+        Nextjs App using app router
+      </Card>
     </main>
   );
 }

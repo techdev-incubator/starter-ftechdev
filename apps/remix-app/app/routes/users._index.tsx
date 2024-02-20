@@ -1,4 +1,4 @@
-import { Card } from "@packages/ui";
+import { Card } from "@package/ui";
 import { LoaderFunction } from "@remix-run/node";
 import { Await, Link, useLoaderData, useMatches } from "@remix-run/react";
 import { Suspense } from "react";
@@ -24,13 +24,15 @@ function UsersIndex() {
             <div style={{ display: 'flex', flexDirection: "column", gap: 12 }} >
                 <Link to='add'>Add User</Link>
                 <h4>All Users</h4>
-                <div style={{ position: "relative", width: 400, display: "flex", flexDirection: "column", gap: 24 }}>
+                <div style={{ position: "relative", display: "flex", gap: 24 }}>
                     <Suspense fallback="loading...">
                         <Await resolve={users}>
                             {(users) => (
                                 users.data.map(user => (
                                     <Card key={user.id} filepath={<Link to={user.id}>{user.username}</Link>}>
-                                        Fullname: {user.full_name}
+                                        Full Name:
+                                        <br />
+                                        {user.full_name}
                                     </Card>
                                 ))
                             )}
